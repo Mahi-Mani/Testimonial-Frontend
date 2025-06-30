@@ -15,21 +15,42 @@ html,
 body {
     min-height: 100vh;
     background-color: var(--Grey100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    border-radius: 50%;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     height: 100%;
     /* gap: 20px; */
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    border-radius: 5px;
 }
 
 .card1 {
     background-color: var(--Purple500);
     grid-column: 1 / span 2;
     grid-row: 1;
-
+    padding: 10px;
+    margin: 10px;
     /* width: 450px; */
     /* height: 200px; */
 }
@@ -38,6 +59,8 @@ body {
     background-color: var(--Grey500);
     grid-column: 3;
     grid-row: 1;
+    padding: 10px;
+    margin: 10px;
     /* width: 200px; */
     /* height: 250px; */
 }
@@ -46,14 +69,18 @@ body {
     background-color: var(--White);
     grid-column: 1;
     grid-row: 2;
+    padding: 10px;
+    margin: 10px;
     /* width: 200px; */
     /* height: 250px; */
 }
 
 .card4 {
     background-color: var(--Darkblue);
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
     grid-row: 2;
+    padding: 10px;
+    margin: 10px;
     /* width: 450px; */
     /* height: 200px; */
 }
@@ -62,6 +89,8 @@ body {
     background-color: var(--White);
     grid-row: 1 / span 2;
     grid-column: 4;
+    padding: 10px;
+    margin: 10px;
     /* width: 200px; */
     /* height: 450px; */
 }
