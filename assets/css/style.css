@@ -20,6 +20,10 @@ body {
     align-items: center;
 }
 
+.quot{
+    margin-left: 20%;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -29,11 +33,47 @@ header {
     border-radius: 50%;
 }
 
+.preview {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 10px;
+}
+
+.review {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    font-size: small;
+}
+
+.name {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* padding: 10px; */
+    font-size: medium;
+}
+
+.title {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* padding: 10px; */
+    font-size: small;
+}
+
+.content {
+    padding: 10px;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     height: 100%;
+    max-width: 70%;
     /* gap: 20px; */
 }
 
@@ -43,6 +83,7 @@ header {
 .card4,
 .card5 {
     border-radius: 5px;
+    box-shadow: 10px 10px 5px var(--Grey200);
 }
 
 .card1 {
@@ -51,6 +92,7 @@ header {
     grid-row: 1;
     padding: 10px;
     margin: 10px;
+    color: var(--White);
     /* width: 450px; */
     /* height: 200px; */
 }
@@ -61,6 +103,7 @@ header {
     grid-row: 1;
     padding: 10px;
     margin: 10px;
+    color: var(--White);
     /* width: 200px; */
     /* height: 250px; */
 }
@@ -71,6 +114,7 @@ header {
     grid-row: 2;
     padding: 10px;
     margin: 10px;
+    color: var(--Grey500);
     /* width: 200px; */
     /* height: 250px; */
 }
@@ -81,6 +125,7 @@ header {
     grid-row: 2;
     padding: 10px;
     margin: 10px;
+    color: var(--White);
     /* width: 450px; */
     /* height: 200px; */
 }
@@ -91,6 +136,7 @@ header {
     grid-column: 4;
     padding: 10px;
     margin: 10px;
+    color: var(--Grey500);
     /* width: 200px; */
     /* height: 450px; */
 }
